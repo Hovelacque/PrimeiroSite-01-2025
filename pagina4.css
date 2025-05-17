@@ -1,0 +1,14 @@
+/* AQUI SÓ É VÁLIDO CSS */
+/* criando a classe card */
+.card {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    background-color: blue;
+}
+
+/* aplicando css no id */
+#container {
+    display: flex;
+    justify-content: center;
+}
