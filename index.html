@@ -35,34 +35,90 @@
 
     <h3>Inputs</h3>
     <label for="texto">Digite um texto:</label>
-    <input id="texto"/>
+    <input id="texto" />
     <br>
     <label for="numero">Digite um número:</label>
-    <input id="numero" type="number"/>
+    <input id="numero" type="number" />
     <br>
     <label for="cor">Escolha uma cor:</label>
-    <input id="cor" type="color"/>
+    <input id="cor" type="color" />
     <br>
     <label for="data">Escolha uma data:</label>
-    <input id="data" type="date"/>
+    <input id="data" type="date" />
     <br>
 
-    <input id="check" type="checkbox"/>
+    <input id="check" type="checkbox" />
     <label for="check">Esta frio</label>
     <br>
-    <input id="fome" type="checkbox"/>
+    <input id="fome" type="checkbox" />
     <label for="fome">Esta com fome</label>
     <br>
 
-    <input id="pt" type="radio" name="starwars" style="margin-top: 30px;" checked/>
+    <input id="pt" type="radio" name="starwars" style="margin-top: 30px;" checked />
     <label for="pt">Primeira trilogia Star Wars</label>
     <br>
-    <input id="st" type="radio" name="starwars"/>
+    <input id="st" type="radio" name="starwars" />
     <label for="st">Segunda trilogia Star Wars</label>
     <br>
-    <input id="tt" type="radio" name="starwars" disabled/>
+    <input id="tt" type="radio" name="starwars" disabled />
     <label for="tt">Terceira trilogia Star Wars</label>
     <br>
+
+    <h3>Tabela</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">Alunos</th>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <th>Matricula</th>
+                <th>Nome</th>
+                <th>Curso</th>
+                <th>Assinatura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>492616</td>
+                <td>Gustavo Geissler</td>
+                <td>Computação</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>894699</td>
+                <td>André Luiz</td>
+                <td>Computação</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        /* AQUI SÓ VALE CSS */
+        /*
+            - Se for um nome sozinho (ex: table, input) o css vai ser aplicado nessas TAGs
+            - Se for usado # (ex: #campoNome) o css vai ser aplicado na tag que estiver com esse ID (ex: <input id="campoNome"/>)
+            - Se for usado . (ex: .classeBotao) o css vai ser aplicado na tag que estiver com essa CLASS (ex: <button class="classeBotao"/>)
+        */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+
+
+
+
+
+
+
+    <div style="padding: 150px;"></div>
 </body>
 
 </html>
